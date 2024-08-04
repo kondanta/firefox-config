@@ -3,10 +3,22 @@ My Tailor-Fitted highly customized and advanced [Firefox](https://www.mozilla.or
 
 ![Firefox Screen 1](screenshots/firefox-1.png)
 
-![Firefox Screen 2](screenshots/firefox-2.png)
+> [!NOTE]
+> This repository is not meant to be used as a whole but rather as a reference for my own configuration. I do not recommend using it as is, as it is not meant to be used by anyone else. I do not provide any support for this repository. If you want to use it, you are on your own.
+>
+> For other experimental features, check out the other branches of this repository.
 
-## Note
-This repository is not meant to be used as a whole, but rather as a reference for my own configuration. I do not recommend using it as is, as it is not meant to be used by anyone else. I do not provide any support for this repository. If you want to use it, you are on your own.
+> [!IMPORTANT]
+> Firefox occasionally changes its codebase, which may break some of the configurations on newer versions of Firefox. I try to keep this repository updated, but I cannot guarantee that everything will work as expected. To deal with it yourself, refer to the [Customizing Firefox](#customizing-firefox) section.
+
+> [!TIP]
+> Customizing Firefox: For detailed guidance on customizing Firefox to suit your needs, refer to the [Customizing Firefox](#customizing-firefox) section. _TL;DR_: To find and inspect browser's selectors see: [Browser Toolbox](https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox).
+>
+> Disable Telemetry and Data Collection: Ensure that all telemetry and data collection features are turned off in Firefox. You can use my `user.js` as a reference, and explore other `user.js` files and hardened Firefox configurations for additional security.
+>
+> Cookie Management: With cookie isolation enabled, clearing cookies may be less effective. Instead, consider using temporary containers for better privacy.
+>
+> JPEG XL (JXL): Firefox 128 now supports JPEG XL images. You can use the [JPEG XL](https://jpeg.org/jpegxl/) format for images to save bandwidth and improve loading times. It is available as `image.jxl.enabled` in `about:config` preference. You can enable it by setting it to `true`. Note that it is currently an experimental feature in Firefox 128+.
 
 I recommend using a Firefox account and sync everything. Make sure to disable telemetry (all telemetry actually) in the settings ;)
 
@@ -18,7 +30,21 @@ I recommend using a Firefox account and sync everything. Make sure to disable te
 
 NB: You can find your default profile in `~/.mozilla/firefox/profiles.ini`.
 
-Per addon configuration files are located in addons directory.
+![Page loading animation](misc/gifs/page-loading-animation.gif)
+![RGB URL bar](misc/gifs/rgb-urlbar.gif)
+![Firefox-1](misc/screenshots/firefox-1.png)
+![Firefox-2](misc/screenshots/firefox-2.png)
+![Navigation Buttons](misc/gifs/navigation-buttons.gif)
+![Other buttons](misc/gifs/other-buttons.gif)
+![Findbar](misc/screenshots/findbar.png)
+![Status Panel](misc/screenshots/statuspanel.png)
+![Searchbar](misc/screenshots/searchbar.png)
+![Downloads Menu](misc/screenshots/downloads-menu.png)
+![Menu](misc/screenshots/menu-0.png)
+![Context Menu](misc/screenshots/context-menu.png)
+![Context Menu 2](misc/screenshots/context-menu-2.png)
+![Menu Bar Menu](misc/screenshots/menu-bar-menu.png)
+![Sidebery Context Menu](misc/screenshots/sidebery-context-menu.png)
 
 ## Additional tweaks
 ### Toolbar
