@@ -22,11 +22,42 @@ My Tailor-Fitted highly customized and advanced [Firefox](https://www.mozilla.or
 
 I recommend using a Firefox account and sync everything. Make sure to disable telemetry (all telemetry actually) in the settings ;)
 
-## Where do each files go
-| File      | Location    |
-| ----------| ----------- |
-| user.js   | ~/.mozilla/firefox/<path_ID>.default/ |
-| chrome    | ~/.mozilla/firefox/<path_ID>.default/ |
+- Smooth scrolling
+- Animations throughout the UI
+- Auto-hiding sidebar (Sidebery)
+- Hovercards
+- Scrollable tabs
+- Searchable sidebar for tabs
+- Custom toolbar icons
+- Bouncing loading indicator
+- Icons only in the extensions menu
+- Icons in main menu items
+- Rounded UI elements
+- Dark theme for pages (e.g., addons.mozilla.org)
+- Centered status panel with animations
+- Compact about:config list
+- Compact menus and items (e.g., context menu)
+- Sidebar tweaks (Sidebery, Tree Style Tab) with auto-hide
+- Tab animations for audio playback
+- Consistent and matching UI colors
+- Hover effects (glow and scale) on toolbar buttons
+- Floating find bar at the top
+- Hidden horizontal tab bar
+- Bottom toolbar and search/url bar
+- Hidden bookmarks toolbar (visible on hover)
+- Custom colors for various elements
+- Centered text in the url bar
+- Colored overlay in the url bar based on connection type
+- RGB animation in the url bar
+- Global font family and size
+- Various fixes and tweaks
+- Custom addons configuration
+- Context menu tweaks (no separators, compact, custom colors & icons, rounded borders)
+- Custom theme
+- Icons in menus (appmenu, context menu, main menu, etc.)
+- Performance and privacy tweaks
+- JPEG XL (JXL) enabled by default
+- Per-site UI/UX tweaks (e.g., YouTube, Mozilla, about:config)
 
 NB: You can find your default profile in `~/.mozilla/firefox/profiles.ini`.
 
