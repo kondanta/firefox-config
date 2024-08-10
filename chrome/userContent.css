@@ -8,10 +8,6 @@
 @import "sites/mozilla.css";
 @import "sites/youtube.css";
 @import "sites/google.css";
-@import "sites/chatgpt.css";
-@import "sites/gemini.css";
-@import "sites/spotify.css";
-@import "sites/proton.css";
 
 /* Text Highlight color on webpages */
 @-moz-document regexp("http(s)?:.*") {
