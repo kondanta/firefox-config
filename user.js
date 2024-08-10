@@ -20,7 +20,60 @@ user_pref("browser.tabs.warnOnClose", true);
 user_pref("general.autoScroll", true);
 user_pref("layout.frame_rate", 120);
 
-/* <https://wiki.archlinux.org/title/Firefox/Tweaks#Smooth_scrolling> */
+// URL Bar
+user_pref("browser.urlbar.suggest.calculator", true);
+user_pref("browser.urlbar.unitConversion.enabled", true);
+user_pref("browser.urlbar.trimURLs", true);
+
+// Cache
+user_pref("browser.cache.jsbc_compression_level", 3);
+
+// Temporary (For: https://bugzilla.mozilla.org/show_bug.cgi?id=1818517)
+user_pref("widget.gtk.ignore-bogus-leave-notify", 1);
+
+// Privacy
+user_pref("privacy.globalprivacycontrol.enabled", true);
+user_pref("browser.privatebrowsing.vpnpromourl", "");
+
+// Crash Reports
+user_pref("breakpad.reportURL", "");
+user_pref("browser.tabs.crashReporting.sendReport", false);
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
+
+// Welcome Page
+user_pref("browser.aboutwelcome.enabled", false);
+user_pref("startup.homepage_welcome_url", "");
+user_pref("startup.homepage_welcome_url.additional", "");
+user_pref("startup.homepage_override_url", "");
+
+// Optimization
+user_pref("network.ssl_tokens_cache_capacity", 32768); // more TLS token caching (fast reconnects)
+
+// Promos
+user_pref("browser.vpn_promo.enabled", false);
+user_pref("browser.promo.focus.enabled", false);
+user_pref("browser.promo.pin.enabled", false);
+
+// Telemetry
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.server", "data:,");
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.bhrPing.enabled", false);
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("toolkit.telemetry.coverage.opt-out", true);
+user_pref("toolkit.coverage.opt-out", true);
+user_pref("toolkit.coverage.endpoint.base", "");
+user_pref("browser.ping-centre.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
+
+/* Based on: <https://wiki.archlinux.org/title/Firefox/Tweaks#Smooth_scrolling> */
 /*
 user_pref("general.smoothScroll.lines.durationMaxMS", 125);
 user_pref("general.smoothScroll.lines.durationMinMS", 125);
