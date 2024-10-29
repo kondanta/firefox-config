@@ -16,3 +16,9 @@
 @import "styling/fonts.css";
 @import "browser/tweaks.css";
 @import "styling/colors.css";
+
+.autoscroller {
+  --panel-border-color: transparent !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
