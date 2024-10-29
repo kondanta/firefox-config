@@ -165,7 +165,8 @@
 
 /* Text color of the full URL besides title in the URL selection menu */
 #urlbar-results :is(.urlbarView-tags, .urlbarView-action, .urlbarView-url) {
-  color: #c38f8f !important;
+  /* color: #161616 !important; */
+  animation: colorCycle 20s linear infinite !important;
 }
 
 /* Text color of the URL selection menu */
