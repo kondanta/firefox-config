@@ -26,7 +26,7 @@ i:not([class*="icon"]):not([class*="glyph"]):not([class*="fa"]):not(
     [class*="zsci-"]
   ):not([class*="zmci-"]):not([class*="fui-Icon-font"]):not(
     [class*="ms-Checkbox-checkmark"]
-  ),
+  ):not([class*="flaticon"]),
 [class^="icon-"]:not([class*="icon"]),
 [class*=" icon-"]:not([class*="icon"]),
 [class*="msi-"]:not([class*="icon"]),
