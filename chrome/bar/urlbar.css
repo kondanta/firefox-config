@@ -51,8 +51,24 @@
 }
 
 /* Remove the reader mode button from the URL bar */
+/*
 #reader-mode-button {
   display: none !important;
+}
+*/
+/* Show the reader mode button when the URL bar is hovered */
+/* Hide the reader mode button without taking up space */
+#reader-mode-button {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the reader mode button on hover */
+#urlbar:hover #reader-mode-button,
+#reader-mode-button:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the picture-in-picture button from the URL bar */
