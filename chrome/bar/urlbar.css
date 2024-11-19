@@ -80,8 +80,24 @@
 */
 
 /* Hide the identity icon by default */
+/*
 #identity-icon {
   display: none !important;
+}
+*/
+/* Show the identity icon when the URL bar is hovered */
+/* Hide the identity icon without taking up space */
+#identity-icon {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the identity icon on hover */
+#urlbar:hover #identity-icon,
+#identity-icon:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Show the identity icon when the site is insecure */
