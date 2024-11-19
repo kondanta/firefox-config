@@ -16,23 +16,16 @@
 /* Hide the tracking protection icon without taking up space */
 #tracking-protection-icon-container,
 .urlbar-input-container > #tracking-protection-icon-container {
-  display: none;
-}
-
-/* Show and animate the icon on hover */
-#urlbar:hover #tracking-protection-icon-container,
-#urlbar:hover .urlbar-input-container > #tracking-protection-icon-container {
-  display: block;
-  transform: scale(0);
   opacity: 0;
-  animation: showIcon 0.3s forwards ease;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-@keyframes showIcon {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+/* Show the icon on hover */
+#urlbar:hover #tracking-protection-icon-container,
+#tracking-protection-icon-container:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the bookmark star button from the URL bar */
@@ -45,15 +38,16 @@
 /* Show the bookmark star button when the URL bar is hovered */
 /* Hide the bookmark star button without taking up space */
 #star-button-box {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-/* Show and animate the star button on hover */
-#urlbar:hover #star-button-box {
-  display: block;
-  transform: scale(0);
-  opacity: 0;
-  animation: showIcon 0.3s forwards ease;
+/* Show the star button on hover */
+#urlbar:hover #star-button-box,
+#star-button-box:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the reader mode button from the URL bar */
