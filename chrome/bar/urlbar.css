@@ -93,8 +93,24 @@
 }
 
 /* Remove the identity permission box from the URL bar */
+/*
 #identity-permission-box {
   display: none !important;
+}
+*/
+/* Show the identity permission box when the URL bar is hovered */
+/* Hide the identity permission box without taking up space */
+#identity-permission-box {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the identity permission box on hover */
+#urlbar:hover #identity-permission-box,
+#identity-permission-box:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the permissions granted icon from the URL bar */
