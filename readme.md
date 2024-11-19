@@ -59,6 +59,9 @@ My tailor-fitted, highly customized, and advanced [Firefox](https://www.mozilla.
 - Performance and privacy tweaks
 - JPEG XL (JXL) enabled by default
 - Per-site UI/UX tweaks (e.g., YouTube, Google, ChatGPT, Mozilla, about:config)
+- Auto-hide items (e.g, bookmarks icon, security icon, permissions icon) in the url bar
+
+For Window Controls at the bottom check this branch: [#bottom-window-control-buttons-dev](https://github.com/TanvirOnGH/firefox-config/tree/bottom-window-control-buttons-dev). Note that this feature is highly experimental as I don't use it actively.
 
 ## Screenshots and GIFs
 
