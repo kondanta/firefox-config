@@ -6,9 +6,22 @@
 }
 
 /* Remove the tracking protection icon from the URL bar */
+/*
 #tracking-protection-icon-container,
 .urlbar-input-container > #tracking-protection-icon-container {
   display: none !important;
+}
+*/
+/* Show the tracking protection icon when the URL bar is hovered */
+#tracking-protection-icon-container,
+.urlbar-input-container > #tracking-protection-icon-container {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#urlbar:hover #tracking-protection-icon-container,
+#urlbar:hover .urlbar-input-container > #tracking-protection-icon-container {
+  opacity: 1;
 }
 
 /* Remove the bookmark star button from the URL bar */
