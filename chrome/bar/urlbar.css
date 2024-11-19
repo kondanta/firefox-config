@@ -18,6 +18,16 @@
 }
 */
 
+/* Show the bookmark star button when the URL bar is hovered */
+#star-button-box {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#urlbar:hover #star-button-box {
+  opacity: 1;
+}
+
 /* Remove the reader mode button from the URL bar */
 #reader-mode-button {
   display: none !important;
