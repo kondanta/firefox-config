@@ -113,6 +113,21 @@
   pointer-events: auto;
 }
 
+/* Show the EME notification icon when the URL bar is hovered */
+/* Hide the EME notification icon without taking up space */
+#eme-notification-icon {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the EME notification icon on hover */
+#urlbar:hover #eme-notification-icon,
+#eme-notification-icon:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Remove the permissions granted icon from the URL bar */
 /*
 #permissions-granted-icon {
