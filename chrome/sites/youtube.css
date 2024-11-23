@@ -45,7 +45,7 @@
   }
 }
 
-/* Custom Soft RGB (RosyBrownRGB) Youtube Progress Bar */
+/* Custom Soft RGB (RosyBrownRGB) Youtube Progress Bar Animation */
 @-moz-document domain(youtube.com) {
   .ytp-play-progress,
   .ytp-swatch-background-color {

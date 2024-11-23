@@ -49,7 +49,7 @@ My tailor-fitted, highly customized, and advanced [Firefox](https://www.mozilla.
 - Custom colors for various elements
 - Centered text in the url bar
 - Colored overlay in the url bar based on connection type
-- RGB animation in the url bar
+- RGB text animation in the url bar
 - Global font family and size
 - Various fixes and tweaks
 - Custom addons configuration
@@ -66,7 +66,7 @@ For Window Controls at the bottom check this branch: [#bottom-window-control-but
 ## Screenshots and GIFs
 
 ![Page loading animation](misc/gifs/page-loading-animation.gif)
-![RGB URL bar](misc/gifs/rgb-urlbar.gif)
+![RGB URL bar text](misc/gifs/rgb-urlbar-text.gif)
 ![Firefox-1](misc/screenshots/firefox-1.png)
 ![Firefox-2](misc/screenshots/firefox-2.png)
 

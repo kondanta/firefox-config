@@ -301,6 +301,7 @@
 /* Modify the urlbar text color based on connection type */
 /* Based on: <https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/urlbar_connection_type_text_colors.css> */
 /* For normal pages (HTTPS with valid certificate) - Animated */
+/* RGB text animation in the URL bar */
 .urlbar-input-container[pageproxystate="valid"]:not(
     [securitylevel="broken"],
     [securitylevel="none"]
