@@ -2,7 +2,7 @@
 
 My tailor-fitted, highly customized, and advanced [Firefox](https://www.mozilla.org/en-US/firefox) configuration.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TanvirOnGH/firefox-config)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Tanvir1337x/firefox-config)
 
 > [!NOTE]
 > This repository is not meant to be used as a whole but rather as a reference for my own configuration. I do not recommend using it as is, as it is not meant to be used by anyone else. I do not provide any support for this repository. If you want to use it, you are on your own.
@@ -61,7 +61,7 @@ My tailor-fitted, highly customized, and advanced [Firefox](https://www.mozilla.
 - Per-site UI/UX tweaks (e.g., YouTube, Google, ChatGPT, Mozilla, about:config)
 - Auto-hide items (e.g, bookmarks icon, security icon, permissions icon) in the url bar
 
-For Window Controls at the bottom check this branch: [#bottom-window-control-buttons-dev](https://github.com/TanvirOnGH/firefox-config/tree/bottom-window-control-buttons-dev). Note that this feature is highly experimental as I don't use it actively.
+For Window Controls at the bottom check this branch: [#bottom-window-control-buttons-dev](https://github.com/Tanvir1337x/firefox-config/tree/bottom-window-control-buttons-dev). Note that this feature is highly experimental as I don't use it actively.
 
 ## Screenshots and GIFs
 
