@@ -2,7 +2,7 @@
   --bottom-bar-height: 40px;
 }
 #root.root {
-  --tabs-border-radius: 10px;
+  --tabs-border-radius: 12px;
 }
 #root.root {
   --tabs-close-btn-margin: 10px;
@@ -190,7 +190,7 @@
 
 /* SIDEBAR HACK PATCHES */
 @media (max-width: 50px) {
-  /* Fix to tab tree identation when minimised */
+  /* Fix to tab tree indentation when minimized */
   #root:not(:hover) .Tab {
     --tabs-indent: 0px;
   }
@@ -226,7 +226,7 @@
   }
 }
 
-/* Disable these two snippets below to make pinned tabs wrap when minimised */
+/* Disable these two snippets below to make pinned tabs wrap when minimized */
 .PinnedDock {
   flex-wrap: nowrap !important;
 }
