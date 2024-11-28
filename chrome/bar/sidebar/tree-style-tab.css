@@ -1,12 +1,10 @@
 /* Hide sidebar header, when using Tree Style Tab. */
-#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
-  #sidebar-header {
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
   visibility: collapse;
 }
 
 /* Hide splitter, when using Tree Style Tab. */
-#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
-  + #sidebar-splitter {
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]+#sidebar-splitter {
   display: none !important;
 }
 

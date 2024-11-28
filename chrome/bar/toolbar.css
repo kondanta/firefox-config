@@ -1,96 +1,4 @@
-/* Based on: <https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/navbar_below_content.css> */
-/* Move the main toolbar (#nav-bar) to the bottom */
-@-moz-document url(chrome://browser/content/browser.xhtml)
-{
-  :root:not([inFullscreen]) {
-    --uc-bottom-toolbar-height: calc(34px + var(--toolbarbutton-outer-padding));
-  }
-
-  :root[uidensity="compact"]:not([inFullscreen]) {
-    --uc-bottom-toolbar-height: calc(32px + var(--toolbarbutton-outer-padding));
-  }
-
-  #browser,
-  #customization-container {
-    margin-bottom: var(--uc-bottom-toolbar-height, 0px);
-  }
-
-  #nav-bar {
-    position: fixed !important;
-    bottom: 0px;
-    /* For some reason -webkit-box behaves internally like -moz-box,
-    but can be used with fixed position.
-    display: flex would work too but it breaks extension menus. */
-    display: -webkit-box;
-    width: 100%;
-    z-index: 1;
-  }
-  #nav-bar-customization-target {
-    -webkit-box-flex: 1;
-  }
-
-  /* Fix panels sizing */
-  .panel-viewstack {
-    max-height: unset !important;
-  }
-
-  #urlbar[breakout][breakout-extend] {
-    display: flex !important;
-    flex-direction: column-reverse;
-    bottom: 0px !important;
-    top: auto !important;
-  }
-
-  .urlbarView-body-inner {
-    border-top-style: none !important;
-  }
-}
-
-/* Remove border between tabbar and urlbar */
-#nav-bar {
-  box-shadow: none !important;
-  margin: 0px !important;
-  border-top: 0px !important;
-  border-bottom: 0px !important;
-}
-
-:root {
-  /* Remove the line between the tab and rest of the UI */
-  --tabs-navbar-separator-style: none !important;
-  /* Remove line separator between tabbar and urlbar */
-  --tab-block-margin: 0 !important;
-}
-
-/* Show bookmarks toolbar when urlbar is focused */
-/*
-#nav-bar:focus-within + #PersonalToolbar{
-  visibility: visible !important;
-}
-
-#PersonalToolbar {
-  visibility: collapse !important;
-}
-*/
-
-/* Hide bookmarks toolbar by default */
-#PersonalToolbar {
-  opacity: 0;
-  visibility: collapse;
-  transition:
-    opacity 0.4s ease-in-out,
-    visibility 0s linear 0.3s;
-}
-
-/* Show bookmarks toolbar when toolbar is hovered */
-#navigator-toolbox:hover > #PersonalToolbar {
-  opacity: 1;
-  visibility: visible;
-  transition:
-    opacity 0.4s ease-in-out,
-    visibility 0s linear 0.3s;
-}
-
-/* Based on: <https://github.com/Etesam913/rounded-fox> */
+/* Based on Based on: https://github.com/Etesam913/rounded-fox */
 
 /* Auto Hide Toolbar */
 /* Breaks on Firefox 113.0+ */
@@ -133,7 +41,86 @@
     --is-bar-visible: visible;
 }
 
-toolbarbutton[open] {
+toolbarbutton[open="true"] {
     --is-bar-visible: visible !important;
 }
 */
+
+/* Move the toolbar to the bottom */
+@-moz-document url(chrome://browser/content/browser.xhtml){
+
+/* Background color of the URL selection menu */
+#urlbar-results .urlbarView-row[selected] {
+    background-color: #A30817 !important;
+}
+
+/* Text color of the URL selection menu */
+#urlbar-results .urlbarView-row[selected] .urlbarView-title {
+    color: #FFFFFF !important;
+}
+
+#main-window body {
+    flex-direction: column-reverse !important;
+}
+
+#navigator-toolbox {
+    flex-direction: column-reverse !important;
+}
+
+#urlbar {
+    top: unset !important;
+    bottom: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+    box-shadow: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#urlbar-input-container {
+    order: 2;
+}
+
+#urlbar>.urlbarView {
+    order: 1;
+    border-bottom: 1px solid #161616;
+}
+
+#urlbar-results {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-one-offs {
+    display: none !important;
+}
+
+.tab-background {
+    border-top: none !important;
+}
+
+#navigator-toolbox::after {
+    border: none;
+}
+
+#TabsToolbar .tabbrowser-arrowscrollbox,
+#tabbrowser-tabs,
+.tab-stack {
+    min-height: 30px !important;
+}
+
+.tabbrowser-tab {
+    font-size: 80%;
+}
+
+.tab-content {
+    padding: 0 5px;
+}
+
+.tab-close-button .toolbarbutton-icon {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+toolbox[inFullscreen=true] {
+    display: none;
+}
+}
