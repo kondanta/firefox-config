@@ -15,13 +15,16 @@
 /* Hide the tracking protection icon without taking up space */
 #tracking-protection-icon-container,
 .urlbar-input-container > #tracking-protection-icon-container {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the icon on hover */
 #urlbar:hover #tracking-protection-icon-container,
 #tracking-protection-icon-container:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Show the containers icon when the URL bar is hovered */
@@ -46,13 +49,16 @@
 /* Show the bookmark star button when the URL bar is hovered */
 /* Hide the bookmark star button without taking up space */
 #star-button-box {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the star button on hover */
 #urlbar:hover #star-button-box,
 #star-button-box:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the reader mode button from the URL bar */
@@ -64,13 +70,16 @@
 /* Show the reader mode button when the URL bar is hovered */
 /* Hide the reader mode button without taking up space */
 #reader-mode-button {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the reader mode button on hover */
 #urlbar:hover #reader-mode-button,
 #reader-mode-button:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the picture-in-picture button from the URL bar */
@@ -82,13 +91,16 @@
 /* Show the picture-in-picture button when the URL bar is hovered */
 /* Hide the picture-in-picture button without taking up space */
 #picture-in-picture-button {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the picture-in-picture button on hover */
 #urlbar:hover #picture-in-picture-button,
 #picture-in-picture-button:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the identity permission box from the URL bar */
@@ -100,25 +112,31 @@
 /* Show the identity permission box when the URL bar is hovered */
 /* Hide the identity permission box without taking up space */
 #identity-permission-box {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the identity permission box on hover */
 #urlbar:hover #identity-permission-box,
 #identity-permission-box:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Show the EME notification icon when the URL bar is hovered */
 /* Hide the EME notification icon without taking up space */
 #eme-notification-icon {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the EME notification icon on hover */
 #urlbar:hover #eme-notification-icon,
 #eme-notification-icon:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the permissions granted icon from the URL bar */
@@ -144,13 +162,16 @@
 /* Show the identity icon when the URL bar is hovered */
 /* Hide the identity icon without taking up space */
 #identity-icon {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the identity icon on hover */
 #urlbar:hover #identity-icon,
 #identity-icon:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Show the identity icon when the site is insecure */
