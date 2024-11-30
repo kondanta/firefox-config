@@ -1,5 +1,4 @@
 @import "../styling/animations.css";
-
 /* Remove the zoom button from the URL bar */
 #urlbar-zoom-button {
   display: none !important;
@@ -26,6 +25,18 @@
 #tracking-protection-icon-container:hover {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* Show the containers icon when the URL bar is hovered */
+/* Hide the containers icon without taking up space */
+#pageAction-urlbar-_testpilot-containers {
+  display: none !important;
+}
+
+/* Show the icon on hover */
+#urlbar:hover #pageAction-urlbar-_testpilot-containers,
+#pageAction-urlbar-_testpilot-containers:hover {
+  display: block !important;
 }
 
 /* Remove the bookmark star button from the URL bar */
