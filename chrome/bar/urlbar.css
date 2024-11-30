@@ -30,13 +30,16 @@
 /* Show the containers icon when the URL bar is hovered */
 /* Hide the containers icon without taking up space */
 #pageAction-urlbar-_testpilot-containers {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Show the icon on hover */
 #urlbar:hover #pageAction-urlbar-_testpilot-containers,
 #pageAction-urlbar-_testpilot-containers:hover {
-  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Remove the bookmark star button from the URL bar */
