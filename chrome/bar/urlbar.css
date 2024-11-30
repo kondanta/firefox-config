@@ -42,6 +42,21 @@
   pointer-events: auto;
 }
 
+/* Show the translations button when the URL bar is hovered */
+/* Hide the translations button without taking up space */
+#translations-button {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the translations button on hover */
+#urlbar:hover #translations-button,
+#translations-button:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Remove the bookmark star button from the URL bar */
 /*
 #star-button-box {
