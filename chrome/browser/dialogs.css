@@ -20,3 +20,18 @@
   margin-top: 0px !important;
   margin-left: 0px !important;
 }
+
+/* Center the dialog overlay */
+.dialogOverlay {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(
+    -45%,
+    -55%
+  ) !important; /* Adjusting for sidebar (sidebery) */
+  margin-left: 0 !important;
+  width: 10% !important;
+  opacity: 1 !important;
+  animation: dialogfadeIn 0.5s forwards;
+}
