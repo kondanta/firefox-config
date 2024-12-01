@@ -13,6 +13,7 @@
 @import "misc/round-items.css";
 @import "panel/statuspanel.css";
 @import "browser/indicators.css";
+@import "browser/dialogs.css";
 @import "styling/fonts.css";
 @import "browser/tweaks.css";
 @import "styling/colors.css";

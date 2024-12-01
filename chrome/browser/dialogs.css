@@ -1,0 +1,15 @@
+/* Move the window modal dialog to the center */
+#window-modal-dialog {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-45%, -55%) !important; /* Adjusting for sidebar (sidebery) */
+  margin-left: 0 !important;
+  width: 10% !important;
+}
+
+#window-modal-dialog > .dialogOverlay > .dialogBox {
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
