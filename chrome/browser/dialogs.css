@@ -35,3 +35,14 @@
   opacity: 1 !important;
   animation: dialogfadeIn 0.5s forwards;
 }
+
+/* Center the tab prompt dialog */
+.tab-prompt-dialog > .dialogOverlay {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.tab-prompt-dialog > .dialogOverlay > .dialogBox {
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
