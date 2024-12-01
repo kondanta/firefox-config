@@ -17,20 +17,3 @@
 @import "styling/fonts.css";
 @import "browser/tweaks.css";
 @import "styling/colors.css";
-
-/* Autoscroll */
-.autoscroller {
-  --panel-border-color: transparent !important;
-  background-color: transparent !important;
-  opacity: 1 !important;
-}
-
-/* Remove site/browser boundary line */
-#tabbrowser-tabbox {
-  outline: none !important;
-  box-shadow: none !important;
-}
-#tabbrowser-tabbox {
-  outline: none !important;
-  box-shadow: none !important;
-}
