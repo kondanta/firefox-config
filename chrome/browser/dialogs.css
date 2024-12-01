@@ -5,8 +5,8 @@
   top: 50% !important;
   left: 50% !important;
   transform: translate(
-    -45%,
-    -55%
+    -25%,
+    -75%
   ) !important; /* Adjusting for sidebar (sidebery) */
   margin-left: 0 !important;
   width: 10% !important;
@@ -27,8 +27,8 @@
   top: 50% !important;
   left: 50% !important;
   transform: translate(
-    -45%,
-    -55%
+    -35%,
+    -65%
   ) !important; /* Adjusting for sidebar (sidebery) */
   margin-left: 0 !important;
   width: 10% !important;
