@@ -21,21 +21,6 @@
   margin-left: 0px !important;
 }
 
-/* Center the dialog overlay */
-.dialogOverlay {
-  position: fixed !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(
-    -35%,
-    -65%
-  ) !important; /* Adjusting for sidebar (sidebery) */
-  margin-left: 0 !important;
-  width: 10% !important;
-  opacity: 1 !important;
-  animation: dialogfadeIn 0.5s forwards;
-}
-
 /* Center the tab prompt dialog */
 .tab-prompt-dialog > .dialogOverlay {
   align-items: center !important;
